@@ -148,6 +148,9 @@ nav a:hover {
         padding: 20px 0;
         margin: 0;
     }
+    nav a:nth-child(1) {
+        border-top: 1px solid gray;
+    }
 }
 
 @media( max-width: 500px) {
