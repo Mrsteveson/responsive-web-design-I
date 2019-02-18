@@ -118,7 +118,6 @@ nav a:hover {
       display: flex;
       flex-direction: column-reverse;
       align-items: center;
-      justify-content: space-between;
     }
 }
 
@@ -128,6 +127,23 @@ nav a:hover {
       flex-wrap: wrap;
       flex-direction: column-reverse;
       align-items: center;
+      width: 100%;
+    }
+}
+
+@media( max-width: 500px ) {
+    .top-nav {
+    display: flex;
+    flex-direction: column;
+    }
+}
+
+@media( max-width: 500px ) {
+    nav a {
+    width: 100%;
+    align-items: center;
+    font-size: 22px;
+    border-bottom: 1px solid gray;
     }
 }
 
