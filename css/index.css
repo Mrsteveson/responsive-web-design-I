@@ -68,8 +68,21 @@ h1, h2, h3, h4, h5 {
 
 .container{
 	width: 880px;
-	margin: 0 auto;
+    margin: 0 auto;
 }
+
+@media( max-width: 800px ) {
+    .container {
+      width: 100%;
+    }
+  }
+
+  @media( max-width: 500px ) {
+    .container {
+      width: 100%;
+    }
+  }
+
 p {
 	line-height: 1.25;
 	margin: 20px 0;
@@ -100,10 +113,29 @@ nav a:hover {
 	margin-top: 10px;
 }
 
+@media( max-width: 800px ) {
+    .navbar {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: space-between;
+    }
+}
+
+@media( max-width: 500px ) {
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+}
+
 .title-section {
 	border-bottom: 1px solid black;
 	margin-top: 20px;
-	padding: 20px 0;
+    padding: 20px 0;
+    width: 100%;
 }
 
 .title-section h1 {
@@ -111,11 +143,9 @@ nav a:hover {
 	white-space: pre-wrap;
 	font-size: 80px;
   	text-align: center;
-  	font-style: italic;
-	
 }
 
-.title-section div {
+.titlechunk {
 	display: inline-block;
 	white-space: pre-wrap;
 	font-size: 80px;
@@ -127,7 +157,8 @@ nav a:hover {
 	border: 1px solid black;
 	padding: 10px 25px;
 	font-size: 16px;
-	vertical-align: top;
+    vertical-align: top;
+    background-color: white;
 }
 
 .title-section button:hover {
@@ -135,13 +166,30 @@ nav a:hover {
 	color: white;
 }
 
+@media( max-width: 800px ) {
+    .titlechunk {
+      display: flex;
+      flex-direction: column;  
+      align-items: center;
+      width: 100%;
+      margin-bottom: 25px;
+    }
+  }
+
 .circle-img {
   	display: inline-block;
 	margin: 65px 45px;
 }
 
+@media( max-width: 800px ) {
+    .circle-img {
+      display: none;
+    }
+  }
+
 .middle-img {
-	margin: 25px 0;
+    margin: 25px 0;
+    width: 100%;
 }
 
 .first-paragraph {
@@ -150,11 +198,29 @@ nav a:hover {
 	width: 45%;
 }
 
+@media( max-width: 800px ) {
+    .first-paragraph {
+      width: 40%;
+    }
+  }
+
+  @media( max-width: 500px ) {
+    .first-paragraph {
+      width: 100%;
+    }
+  }
 .second-paragraph {
 	display: inline-block;
 	margin: 5px;
 	width: 30%;
 }
+
+@media( max-width: 500px ) {
+    .second-paragraph {
+      width: 100%;
+      margin: 20px;
+    }
+  }
 
 .contact-info {
 	border-top: 1px solid black;
