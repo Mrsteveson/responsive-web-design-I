@@ -215,6 +215,10 @@ nav a:hover {
     }
   }
 
+.maincontent {
+    margin: 25px;
+}
+
 .middle-img {
     margin: 25px 0;
     width: 100%;
@@ -222,7 +226,6 @@ nav a:hover {
 
 .first-paragraph {
 	display: inline-block;
-	margin: 20px;
 	width: 45%;
 }
 
@@ -246,13 +249,13 @@ nav a:hover {
 @media( max-width: 500px ) {
     .second-paragraph {
       width: 100%;
-      margin: 20px;
     }
   }
 
 .contact-info {
 	border-top: 1px solid black;
-	margin: 30px 0 20px 0;
+    margin: 30px 0 20px 0;
+    padding: 25px;
 }
 
 address {
@@ -261,6 +264,9 @@ address {
 }
 
 footer {
-	text-align: center;
+    text-align: center;
 }
 
+/* put a margin around the div that contains all paragraphs
+and the middle image to get equal outside distance
+then put padding on footer same px */
